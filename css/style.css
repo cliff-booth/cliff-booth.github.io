@@ -192,7 +192,6 @@ text-transform: uppercase;
 }
 .section--gray {
   background-color: #f8f8f8;
-
 }
 .section__header {
   width: 100%;
@@ -221,38 +220,41 @@ text-transform: uppercase;
   color: #acacac;
   font-size: 15px;
 }
-/* About */
-.about {
+/* Card */
+.card {
   margin-top: 80px;
   display: flex;
   justify-content: space-between;
 }
-.about__item {
+.card__item {
   width: 380px;
+  transition: opacity .2s linear;
+  /* margin-bottom: 120px; */
+}
+.card__inner {
   background-color: #95e1d3;
   position: relative;
-  transition: opacity .2s linear;
 }
-.about__item:hover .about__img {
+.card__item:hover .card__img {
   transform: translate3d(-10px, -10px, 0)
 }
-.about__item:hover .about__img img {
+.card__item:hover .card__img img {
   opacity: .1;
 }
-.about__item:hover .about__text {
+.card__item:hover .card__text {
   opacity: 1;
 }
-.about__img {
+.card__img {
   background: linear-gradient(to bottom, #f38181, #fce38a);
 
   transition: transform .1s linear;
  
 }
-.about__img img {
+.card__img img {
   display: block;
   transition: opacity .3s linear;
 }
-.about__text {
+.card__text {
   width: 100%;
   font-weight: 700;
   color: #fff;
@@ -266,6 +268,20 @@ text-transform: uppercase;
   opacity: 0;
   transition: opacity .2s linear;
 }
+.card__name {
+  padding-top: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+.card__prof {
+  padding-top: 20px;
+  color: #999;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 300;
+}
+
 /* Statistics */
 .statistics {
   background-color: #95e1d3;
@@ -449,5 +465,34 @@ text-transform: uppercase;
   z-index: 1;
   transform: translateY(-50%);
   right: -75px;
+}
+/* Social */
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social__item {
+  width: 55px;
+  height: 55px;
+  padding: 12px 10px;
+  background-color: #fce38a;
+  border-right: 1px solid #f38181;
+
+  font-size: 30px;
+  text-decoration: none;
+  color: #f38181;
+  line-height: 1;
+
+  transition: color .1s linear;
+  transition: background-color .1s linear;
+}
+.social__item:last-child {
+  border-right: none;
+}
+.social__item:hover {
+  background-color: #f38181;
+  color: #fff;
+  transition: color .1s linear;
+  transition: background-color .1s linear;
 }
 
