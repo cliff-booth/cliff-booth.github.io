@@ -181,7 +181,6 @@ text-transform: uppercase;
 .section {
   padding: 80px 0;
   text-align: center;
-
 }
 .section--device {
   background: url(../images/design/background.jpg) center no-repeat;
@@ -192,6 +191,10 @@ text-transform: uppercase;
 }
 .section--gray {
   background-color: #f8f8f8;
+}
+.section--img {
+  background: url(../images/what_people_say/background.jpg) center no-repeat;
+  background-size: cover;
 }
 .section__header {
   width: 100%;
@@ -556,4 +559,52 @@ margin-top: 100px;
 }
 .grid__icon {
   margin-bottom: 20px;
+}
+/* Human */
+.human {
+  margin-top: 80px;
+  display: flex;
+}
+.human__col {
+  text-align: left;
+}
+.human__col:last-child {
+  margin-left: 80px;
+}
+.human__item:first-child {
+  margin-bottom: 80px;
+}
+.human__img {
+  float: left;
+  margin-right: 30px;
+  clear: both;
+}
+.human__name {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333;
+
+  margin-bottom: 10px;
+}
+.human__prof {
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  color: #646464;
+}
+.human__prof:after {
+  display:block;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin: 20px 0px 20px 140px;
+  
+}
+.human__text {
+  display: block;
+  font-size: 15px;
+  color: #999999;
+  margin-left: 140px;
 }
