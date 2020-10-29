@@ -431,6 +431,12 @@ text-transform: uppercase;
   padding: 40px;
   border: 3px solid #95e1d3;
 }
+.reviews__icon--Earle {
+ border: none;
+ position: absolute;
+  top: -85px;
+  left: -65px;
+}
 .reviews__text {
   font-size: 24px;
   font-style: italic;
@@ -495,4 +501,59 @@ text-transform: uppercase;
   transition: color .1s linear;
   transition: background-color .1s linear;
 }
+/* Grid */
+.grid__container {
+  margin: 0 auto;
+}
+.grid {
+  display: flex;
+  justify-items: stretch;
+margin-top: 100px;
+}
+.grid__item {
+  position: relative;
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+.grid__item:hover .grid__img {
+  opacity: .1;
 
+}
+.grid__item:hover .grid__info {
+  opacity: 1;
+}
+.grid__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity .2s linear;
+  
+}
+.grid__info {
+  opacity: 0;
+  transition: opacity .2s linear;
+
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translateY(0, -50%, 0);
+ 
+  color: #fff;
+
+  font-family: Montserrat;
+}
+.grid__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.grid__text {
+  
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 300;
+}
+.grid__icon {
+  margin-bottom: 20px;
+}
