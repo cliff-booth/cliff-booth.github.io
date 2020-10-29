@@ -196,6 +196,12 @@ text-transform: uppercase;
   background: url(../images/what_people_say/background.jpg) center no-repeat;
   background-size: cover;
 }
+.section--map {
+  background: url(../images/map/background.jpg) center no-repeat;
+  background-size: cover;
+  height: 200px;
+  text-align: center;
+}
 .section__header {
   width: 100%;
   max-width: 950px;
@@ -603,8 +609,118 @@ margin-top: 100px;
   
 }
 .human__text {
-  display: block;
   font-size: 15px;
   color: #999999;
   margin-left: 140px;
+}
+/* Blog */
+.blog {
+  display: flex;
+}
+.blog__item {
+  margin-right: 35px;
+  position: relative;
+
+}
+.blog__item:last-child {
+  margin-right: 0;
+}
+
+.blog__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  text-align: left;
+}
+.blog__text {
+  font-size: 15px;
+  color: #999999;
+  text-align: left;
+
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.blog__time {
+position: absolute;
+top: 160px;
+left: -10px;
+
+height: 70px;
+width: 60px;
+
+background-color: #95e1d3;
+
+line-height: 1;
+}
+.blog__date {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+
+  color: #fff;
+
+  margin-top: 10px;
+}
+.blog__mou {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+
+  color: #fff;
+}
+
+
+.blog__icon {
+  text-align: left;
+}
+.blog__eye {
+  display: inline-block;
+}
+.blog__commit {
+  display: inline-block;
+}
+.view {
+  display: inline-block;
+}
+.views {
+  display: inline-block;
+}
+.coment {
+  display: inline-block;
+}
+.coments {
+  display: inline-block;
+}
+/* Map */
+.map {
+  padding-top: 60px;
+}
+.map__icon {
+  padding-bottom: 10px;
+}
+.map__title {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+
+  color: #f38181;
+  text-transform: uppercase;
+
+  /* padding: 20px ; */
+}
+.map__title:after {
+  display: block;
+  content: "";
+  background-color: #f38181;
+  width: 60px;
+  height: 3px;
+  margin: 20px auto 0px;
 }
